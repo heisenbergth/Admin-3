@@ -7,15 +7,15 @@ const axios = require('axios');
 const app = express();
 
 const LINE_CONFIG = {
-    channelAccessToken: 'C0bF4HxElJ+o7CfQAX8fQz0dDcafFYvc7VoDMP1nPlftCz+8j2BHsOe2t/CCHYjk4hdByIoE15NxUGmVJdzC4hJ7HtSSg41/gA+YsZbr6kkKG4dUJ9fhdJsGnmGX/91BrNeCq5CylJJd9Gaf7gnuGQdB04t89/1O/w1cDnyilFU=',
-    channelSecret: '8a471549a72d99842a577d6793a76725'
+    channelAccessToken: 'hadK35EKm6TJVQQEpmVRC3g7oXsVkE8p3BaqPdH2J5K9Jo2awyBgdMcCbQTNADkypKlp8WdF/XFzmY+vNfsCdfOVrIursPQ2DpXEAcbU9jrd6Adjr2iyEXcDp/JTz2OsX850osx/C1bRpz6QeU+AFAdB04t89/1O/w1cDnyilFU=',
+    channelSecret: 'b7b8d4e0a2d81748b6311faf74451e62'
 };
 
 const client = new Client(LINE_CONFIG);
 
 const sheets = google.sheets('v4');
 const GOOGLE_SHEET_ID = '1xWM0fj8a8-6O--XiSxpT6ZQMS7JAOSrHv_yySn45cSM';
-const GOOGLE_SHEET_RANGE = 'testA!A1'; // Adjust accordingly
+const GOOGLE_SHEET_RANGE = 'หวย-12A!A1'; // Adjust accordingly
 
 const serviceAccount = require('./credentials.json');
 const jwtClient = new google.auth.JWT({
